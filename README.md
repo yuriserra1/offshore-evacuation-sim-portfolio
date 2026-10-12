@@ -2,7 +2,7 @@
 
 Simulador 3D em Unity que reproduz a evacuação da tripulação de uma plataforma de petróleo e compara **modelos de movimento de multidões** nas mesmas condições, com experimentos automatizados e reprodutíveis.
 
-> Projeto de pesquisa da **FURG**, de responsabilidade dos professores orientadores, do qual participo como voluntário. O desenvolvimento e os testes acontecem no **ECOLAB**, espaço do **C3 — Centro de Ciências Computacionais** usado pelos alunos. A pesquisa está em andamento: o código-fonte e os resultados ficam privados até a publicação. Esta página descreve o funcionamento e a arquitetura.
+> Projeto de pesquisa da **FURG**, sob orientação do **Prof. Alessandro de Lima Bicho**, do qual participo como voluntário. O desenvolvimento e os testes acontecem no **ECOLAB**, espaço do **C3 — Centro de Ciências Computacionais** usado pelos alunos. A pesquisa está em andamento: o código-fonte e os resultados ficam privados até a publicação. Esta página descreve o funcionamento e a arquitetura.
 
 ## O problema
 
@@ -80,13 +80,13 @@ Unity 6 · C# · HLSL (compute shaders) · NavMesh · Burst e Jobs · CUDA (estu
 
 ## Situação
 
-- Pesquisa em andamento na FURG, sob orientação dos professores responsáveis pelo projeto.
+- Pesquisa em andamento na FURG, sob orientação do Prof. Alessandro de Lima Bicho.
 - Resultados numéricos e código serão divulgados com a publicação do trabalho.
 - Capturas de tela e vídeo do simulador serão adicionados a esta página.
 
 ## Créditos
 
-- O projeto de pesquisa pertence aos professores orientadores. Minha participação é como aluno voluntário, no desenvolvimento do simulador.
+- O projeto de pesquisa é do Prof. Alessandro de Lima Bicho (FURG), que também o orienta. Minha participação é como aluno voluntário, no desenvolvimento do simulador.
 - O algoritmo BioCrowds foi proposto por Alessandro de Lima Bicho em *Simulating crowds based on a space colonization algorithm*.
 - O modelo Social Forces foi proposto por Dirk Helbing e Péter Molnár.
 - O modelo 3D da plataforma é um recurso de terceiros.
