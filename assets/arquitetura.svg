@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 600" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="seta" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="920" height="600" rx="14" fill="#0f172a"/>
+  <text x="40" y="48" fill="#f8fafc" font-size="22" font-weight="700">Arquitetura do simulador</text>
+  <text x="40" y="72" fill="#94a3b8" font-size="14">O modelo de movimento e a busca de caminho são peças trocáveis; o resto da simulação não muda.</text>
+
+  <!-- cenário -->
+  <rect x="40" y="98" width="840" height="60" rx="10" fill="#0c4a6e" stroke="#38bdf8"/>
+  <text x="60" y="124" fill="#f0f9ff" font-size="16" font-weight="700">Cenário 3D: plataforma offshore</text>
+  <text x="60" y="145" fill="#bae6fd" font-size="13">vários conveses · escadas · pontos de origem dos tripulantes · pontos de saída</text>
+
+  <line x1="460" y1="158" x2="460" y2="184" stroke="#64748b" stroke-width="2" marker-end="url(#seta)"/>
+
+  <!-- gerente -->
+  <rect x="40" y="188" width="840" height="56" rx="10" fill="#1e293b" stroke="#475569"/>
+  <text x="60" y="212" fill="#f8fafc" font-size="15" font-weight="700">AgentManager + AgentSpawner</text>
+  <text x="60" y="232" fill="#94a3b8" font-size="13">escolhe a combinação de algoritmos no Inspector e injeta nos agentes de cada ponto de origem</text>
+
+  <line x1="250" y1="244" x2="250" y2="272" stroke="#64748b" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="670" y1="244" x2="670" y2="272" stroke="#64748b" stroke-width="2" marker-end="url(#seta)"/>
+
+  <!-- pathfinding -->
+  <rect x="40" y="276" width="410" height="112" rx="10" fill="#1e293b" stroke="#475569"/>
+  <text x="60" y="302" fill="#f8fafc" font-size="15" font-weight="700">Navegação global <tspan fill="#94a3b8" font-weight="400" font-size="13">(IPathfinding)</tspan></text>
+  <text x="60" y="326" fill="#cbd5e1" font-size="13">A* sobre a malha de navegação do Unity</text>
+  <text x="60" y="348" fill="#cbd5e1" font-size="13">travessia de escadas entre conveses</text>
+  <text x="60" y="370" fill="#64748b" font-size="13">previsto: Q-Learning, campos de fluxo</text>
+
+  <!-- movimento -->
+  <rect x="470" y="276" width="410" height="112" rx="10" fill="#312e81" stroke="#818cf8"/>
+  <text x="490" y="302" fill="#eef2ff" font-size="15" font-weight="700">Movimento local <tspan fill="#c7d2fe" font-weight="400" font-size="13">(IMovementModel)</tspan></text>
+  <text x="490" y="326" fill="#e0e7ff" font-size="13">BioCrowds: competição por espaço, na GPU</text>
+  <text x="490" y="348" fill="#e0e7ff" font-size="13">Social Forces: forças de atração e repulsão</text>
+  <text x="490" y="370" fill="#a5b4fc" font-size="13">previsto: BioClouds (meso), Boids (macro)</text>
+
+  <line x1="250" y1="388" x2="250" y2="416" stroke="#64748b" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="670" y1="388" x2="670" y2="416" stroke="#64748b" stroke-width="2" marker-end="url(#seta)"/>
+
+  <!-- agente -->
+  <rect x="40" y="420" width="840" height="56" rx="10" fill="#14532d" stroke="#22c55e"/>
+  <text x="60" y="444" fill="#f0fdf4" font-size="15" font-weight="700">Agente (tripulante)</text>
+  <text x="60" y="464" fill="#bbf7d0" font-size="13">estados: parado · andando · atravessando escada · evacuado — mede o próprio tempo, distância e velocidade</text>
+
+  <line x1="460" y1="476" x2="460" y2="502" stroke="#64748b" stroke-width="2" marker-end="url(#seta)"/>
+
+  <!-- métricas -->
+  <rect x="40" y="506" width="410" height="70" rx="10" fill="#7c2d12" stroke="#fb923c"/>
+  <text x="60" y="532" fill="#fff7ed" font-size="15" font-weight="700">MetricsCollector</text>
+  <text x="60" y="554" fill="#fed7aa" font-size="13">CSV por agente e CSV de trajetórias</text>
+  <rect x="470" y="506" width="410" height="70" rx="10" fill="#7c2d12" stroke="#fb923c"/>
+  <text x="490" y="532" fill="#fff7ed" font-size="15" font-weight="700">AutoTestRunner</text>
+  <text x="490" y="554" fill="#fed7aa" font-size="13">repete o experimento com sementes e passo de tempo fixos</text>
+</svg>

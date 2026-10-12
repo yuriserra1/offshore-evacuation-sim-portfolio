@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="s" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="920" height="300" rx="14" fill="#0f172a"/>
+  <text x="40" y="46" fill="#f8fafc" font-size="20" font-weight="700">Ciclo de um experimento automatizado</text>
+  <text x="40" y="68" fill="#94a3b8" font-size="13">Uma campanha roda sozinha do início ao fim; cada rodada gera seus próprios arquivos.</text>
+
+  <g font-size="13">
+    <rect x="40" y="100" width="150" height="86" rx="10" fill="#1e293b" stroke="#475569"/>
+    <text x="115" y="128" fill="#f8fafc" text-anchor="middle" font-weight="700" font-size="14">1. Fixar o tempo</text>
+    <text x="115" y="150" fill="#94a3b8" text-anchor="middle">30 passos por</text>
+    <text x="115" y="168" fill="#94a3b8" text-anchor="middle">segundo, constantes</text>
+
+    <rect x="212" y="100" width="150" height="86" rx="10" fill="#1e293b" stroke="#475569"/>
+    <text x="287" y="128" fill="#f8fafc" text-anchor="middle" font-weight="700" font-size="14">2. Semear</text>
+    <text x="287" y="150" fill="#94a3b8" text-anchor="middle">semente base +</text>
+    <text x="287" y="168" fill="#94a3b8" text-anchor="middle">número da rodada</text>
+
+    <rect x="384" y="100" width="150" height="86" rx="10" fill="#14532d" stroke="#22c55e"/>
+    <text x="459" y="128" fill="#f0fdf4" text-anchor="middle" font-weight="700" font-size="14">3. Simular</text>
+    <text x="459" y="150" fill="#bbf7d0" text-anchor="middle">até todos evacuarem</text>
+    <text x="459" y="168" fill="#bbf7d0" text-anchor="middle">ou estourar o limite</text>
+
+    <rect x="556" y="100" width="150" height="86" rx="10" fill="#7c2d12" stroke="#fb923c"/>
+    <text x="631" y="128" fill="#fff7ed" text-anchor="middle" font-weight="700" font-size="14">4. Exportar</text>
+    <text x="631" y="150" fill="#fed7aa" text-anchor="middle">métricas e trajetórias</text>
+    <text x="631" y="168" fill="#fed7aa" text-anchor="middle">em CSV, por rodada</text>
+
+    <rect x="728" y="100" width="152" height="86" rx="10" fill="#1e293b" stroke="#475569"/>
+    <text x="804" y="128" fill="#f8fafc" text-anchor="middle" font-weight="700" font-size="14">5. Recarregar</text>
+    <text x="804" y="150" fill="#94a3b8" text-anchor="middle">a cena, até completar</text>
+    <text x="804" y="168" fill="#94a3b8" text-anchor="middle">as 30 rodadas</text>
+  </g>
+
+  <g stroke="#64748b" stroke-width="2" fill="none">
+    <line x1="190" y1="143" x2="208" y2="143" marker-end="url(#s)"/>
+    <line x1="362" y1="143" x2="380" y2="143" marker-end="url(#s)"/>
+    <line x1="534" y1="143" x2="552" y2="143" marker-end="url(#s)"/>
+    <line x1="706" y1="143" x2="724" y2="143" marker-end="url(#s)"/>
+    <path d="M804,186 L804,232 L287,232 L287,190" marker-end="url(#s)"/>
+  </g>
+  <text x="545" y="252" fill="#94a3b8" font-size="12" text-anchor="middle">próxima rodada, com a semente seguinte</text>
+  <text x="40" y="282" fill="#64748b" font-size="12">Mesma semente e mesmo passo de tempo produzem a mesma simulação, o que permite comparar modelos em condições iguais.</text>
+</svg>

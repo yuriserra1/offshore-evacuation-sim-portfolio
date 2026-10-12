@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 330" font-family="Consolas, Menlo, monospace" font-size="14">
+  <rect width="920" height="330" rx="12" fill="#0d1117"/>
+  <rect width="920" height="38" rx="12" fill="#161b22"/>
+  <rect y="26" width="920" height="12" fill="#161b22"/>
+  <circle cx="24" cy="19" r="6" fill="#ff5f56"/><circle cx="44" cy="19" r="6" fill="#ffbd2e"/><circle cx="64" cy="19" r="6" fill="#27c93f"/>
+  <text x="460" y="24" fill="#8b949e" text-anchor="middle" font-size="13">Console do Unity — campanha automatizada</text>
+
+  <g>
+    <text x="24" y="70" fill="#58a6ff">[AUTO TEST] Física cravada em 30 FPS. FixedDeltaTime: 0,03333334</text>
+    <text x="24" y="98" fill="#d2a8ff">[AUTO TEST] Determinismo ativado! Seed cravada em 2027 para a rodada 1</text>
+    <text x="24" y="122" fill="#d29922">[AUTO TEST] Iniciando Execução 1 de 30 (SocialForces)</text>
+    <text x="24" y="146" fill="#58a6ff">[AUTO TEST] Simulação 1 concluída com sucesso!</text>
+    <text x="24" y="170" fill="#3fb950">Métricas guardadas! Resumo e Trajetórias gerados em: Assets/SimulationMetrics</text>
+    <text x="24" y="198" fill="#d2a8ff">[AUTO TEST] Determinismo ativado! Seed cravada em 2028 para a rodada 2</text>
+    <text x="24" y="222" fill="#d29922">[AUTO TEST] Iniciando Execução 2 de 30 (SocialForces)</text>
+    <text x="24" y="246" fill="#8b949e">…</text>
+    <text x="24" y="270" fill="#3fb950">[AUTO TEST] TODAS AS SIMULAÇÕES FINALIZADAS!</text>
+  </g>
+  <text x="24" y="308" fill="#8b949e" font-size="12" font-family="Segoe UI, Arial, sans-serif">Reprodução das mensagens emitidas pelo executor de experimentos, com a configuração padrão do projeto.</text>
+</svg>
